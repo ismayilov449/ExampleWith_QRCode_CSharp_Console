@@ -18,7 +18,7 @@ namespace ExampleWith_QRCode
 
           
             BarcodeSettings settings = new BarcodeSettings();
-            settings.Type = BarCodeType.Aztec;
+            settings.Type = BarCodeType.QRCode;
             settings.Unit = GraphicsUnit.Inch;
             settings.ShowText = false;
             settings.AutoResize = true;
