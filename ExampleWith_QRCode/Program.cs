@@ -16,15 +16,19 @@ namespace ExampleWith_QRCode
         {
            
 
+
           
             BarcodeSettings settings = new BarcodeSettings();
             settings.Type = BarCodeType.QRCode;
             settings.Unit = GraphicsUnit.Inch;
             settings.ShowText = false;
             settings.AutoResize = true;
+            settings.QRCodeECL = QRCodeECL.M;
 
             settings.ResolutionType = ResolutionType.Printer;
             settings.Data = "https://github.com/ismayilov449";
+            settings.Data2D = "https://github.com/ismayilov449";
+
             BarCodeGenerator generator = new BarCodeGenerator(settings);
             Image QRbarcode = generator.GenerateImage();
             

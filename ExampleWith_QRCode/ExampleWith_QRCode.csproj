@@ -9,8 +9,4 @@
     <PackageReference Include="Spire.Barcode" Version="4.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
-
 </Project>
