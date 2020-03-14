@@ -14,9 +14,7 @@ namespace ExampleWith_QRCode
 
         static void Main(string[] args)
         {
-           
-
-
+            
           
             BarcodeSettings settings = new BarcodeSettings();
             settings.Type = BarCodeType.QRCode;
@@ -33,7 +31,7 @@ namespace ExampleWith_QRCode
             Image QRbarcode = generator.GenerateImage();
             
 
-            QRbarcode.Save(@"C:\Users\Rufat\source\repos\ExampleWith_QRCode\ExampleWith_QRCode\Images\"+ Guid.NewGuid().ToString() + ".jpeg", ImageFormat.Jpeg);
+            QRbarcode.Save("../../../Images/"+ Guid.NewGuid().ToString() + ".jpeg", ImageFormat.Jpeg);
 
             Console.WriteLine("Your QR Code is saved in Images folder");
 
